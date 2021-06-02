@@ -5,7 +5,7 @@
 :root {
     --coral: #F08080;
     --lightcoral: rgba(240, 128, 128, 0.35);
-    --gold: #FFD700;
+    --gold: #E29600;
     --lightgold: rgba(255, 215, 0, 0.35);
     --teal: #008080;
     --lightteal: rgba(0, 128, 128, 0.35);
@@ -15,7 +15,6 @@
 }
 
 body {
-    background-color: var(--teal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +31,6 @@ body {
     align-items: center;}
 
 #left-wrapper {
-    background-color: var(--lightteal);
     height: 100%;
     width: 33.33333%;
     margin: 0;
@@ -161,6 +159,7 @@ body {
         width: 100%;
         justify-content: center;
         padding-bottom: 3.5rem;
+        box-shadow: none;
     }
 
     #avatar-container {
