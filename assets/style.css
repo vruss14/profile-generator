@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 :root {
     --coral: #F08080;
     --lightcoral: rgba(240, 128, 128, 0.35);
@@ -57,7 +58,6 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 100%;
-
 }
 
 #greeting {
@@ -69,7 +69,8 @@ body {
 }
 
 #info-wrapper {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     margin-left: 7rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
@@ -94,4 +95,123 @@ body {
 .contact-icon:hover {
     transform: scale(1.2);
     transition: .3s ease-in-out;
+}
+
+/* Responsive styling */
+
+@media screen and (min-width: 1550px) {
+    #avatar-container {
+        margin-left: 35%;
+    }
+    
+}
+
+@media screen and (max-width: 1330px) {
+    #wrapper {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    #left-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin:0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #avatar-container {
+        margin-left: 0;
+    }
+
+    #right-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    #info-wrapper {
+        padding: 0;
+        margin: 2rem;
+    }
+
+    #skills-list {
+        margin-bottom: 2rem;
+    }
+
+    #github-logo {
+        margin-right: 3rem;
+        margin-left: 0;
+    }
+    
+    #linkedin-logo {
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0rem;
+    }
+
+    #wrapper {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 3.5rem;
+    }
+
+    #avatar-container {
+        width: 250px;
+        height: 250px;
+        
+    }
+    #avatar {
+        width: 175px;
+        height: 175px;
+    }
+    
+    #greeting {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #info-wrapper {
+        padding: 0.5rem;
+    }
+
+    #skills-list {
+        margin-bottom: 4rem;
+    }
+
+    #github-logo {
+        height: 64px;
+        width: 64px;
+    }
+    
+    #linkedin-logo {
+        height: 32px;
+        width: 128px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #github-logo {
+        margin-bottom: 2rem;
+    }
+
+    #github-logo, #linkedin-logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
 }
