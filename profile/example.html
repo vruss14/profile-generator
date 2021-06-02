@@ -5,12 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description= "A command line interface that generates an HTML page based on user inputs.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
     <link rel = "stylesheet" type = "text/css" href = "../assets/style.css">
     <title>Profile Generator</title>
 </head>
 <body>
-    
-<script src = "../assets/script.js"></script>
+    <div id = "wrapper">
+
+        <div id = "left-wrapper">
+
+            <!-- Avatar images are all from www.pngrepo.com -->
+            <div id = "avatar-container">
+                <img src = "../assets/images/avatars/astronaut-pngrepo-com.png" width= "350px" height= "350px" />
+            </div>
+
+        </div>
+        
+        <div id = "right-wrapper">
+
+            <h1 id = "greeting">Hello, I'm Valerie!</h1>
+
+            <div id = "info-wrapper">
+
+                <p id = "bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur.</p>
+
+                <p id = "skills">A few of my skills:</p>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Ut labore et dolore magna aliqua</li>
+                </ul>
+
+                <div id = "contact-info">
+                    <a href= "https://github.com/vruss14" target="_blank" rel = "noopener"><img src = "../assets/images/icons/GitHub-Mark-120px-plus.png" alt = "GitHub icon" class = "contact-icon" id = "github-logo" width = "120px"></a>
+                    <a href= "https://www.linkedin.com/in/valerie-russell-732731162" target="_blank" rel = "noopener"><img src = "../assets/images/icons/LI-Logo.png" alt = "LinkedIn icon" class = "contact-icon" id = "linkedin-logo" width = "256px"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src = "../assets/script.js"></script>
 </body>
 </html>
