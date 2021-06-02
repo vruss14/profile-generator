@@ -27,17 +27,17 @@ inquirer
       }, 
       {
         type: 'input',
-        message: 'What\s one of your technical skills?',
+        message: 'What\'s one of your technical skills?',
         name: 'techSkill'
       },
       {
         type: 'input',
-        message: 'What\s one of your soft skills?',
+        message: 'What\'s one of your soft skills?',
         name: 'softSkill'
       },
       {
         type: 'input',
-        message: 'What\s one more of your skills that you\d like to include in your profile?',
+        message: 'What\'s one more of your skills that you\d like to include in your profile?',
         name: 'customSkill'
       },
       {
