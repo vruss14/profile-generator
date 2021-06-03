@@ -46,7 +46,7 @@ A view of the same profile on mobile:
 
 ## Usage
 
-This application is intended to create simple profile pages. Multiple pages can be created if desired, but should be named differently (i.e. a different first name should be used for each page).
+This application is intended to create simple profile pages. Multiple pages can be created if desired, but should be named differently (i.e. a different first name should be used for each page). Otherwise, the previous file will be rewritten.
 
 ## License
 

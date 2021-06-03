@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 // Custom choices for user avatars and themes
 const avatars = ["Astronaut", "Bear", "Dog", "Rubber Duck", "Fish", "Frog", "Happy Face", "Ladybug", "Robot", "Tree"];
-const themes = ["Gold", "Pink", "Teal"];
+const themes = ["Red", "Pink", "Orange", "Gold", "Green", "Teal", "Blue", "Purple", "Black & White"];
 
 // Questions asked in the command line interface
 
@@ -104,23 +104,41 @@ inquirer
         let lightBackground;
 
         // Based on the user's choice, the colors of the website change
-        if (data.colorScheme === "Gold") {
-          background = "#E29600";
-          lightBackground = "rgba(255, 215, 0, 0.35)";
+        if (data.colorScheme === "Red") {
+          background = "#B22222";
+          lightBackground = "rgba(178, 34, 34, 0.35)";
         } else if (data.colorScheme === "Pink") {
           background = "#F08080";
           lightBackground = "rgba(240, 128, 128, 0.35)";
-        } else {
+        } else if (data.colorScheme === "Orange") {
+          background = "#FF8C00";
+          lightBackground = "rgba(255, 140, 0, 0.35)";
+        } else if (data.colorScheme === "Gold") {
+          background = "#E29600";
+          lightBackground = "rgba(255, 215, 0, 0.35)";
+        } else if (data.colorScheme === "Green") {
+          background = "#2E8B57";
+          lightBackground = "rgba(46, 139, 87, 0.35)";
+        } else if (data.colorScheme === "Teal") {
           background = "#008080";
           lightBackground = "rgba(0, 128, 128, 0.35)";
+        } else if (data.colorScheme === "Blue") {
+          background = "#4682B4";
+          lightBackground = "rgba(70, 130, 180, 0.35)";
+        } else if (data.colorScheme === "Purple") {
+          background = "#663399";
+          lightBackground = "rgba(102, 51, 153, 0.35)";
+        } else {
+          background = "#000000";
+          lightBackground = "rgba(0, 0, 0, 0.35)";
         }
 
-        // The appended file includes several aspects of the user's data
+        // The written file includes several aspects of the user's data
 
         // The replace method is used to remove the quotes around the lightBackground string so that
         // the browser can interpret the color correctly
 
-        fs.appendFile(filename,
+        fs.writeFile(filename,
 `<!DOCTYPE html>
 <html lang="en">
 <head>
