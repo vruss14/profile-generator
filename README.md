@@ -54,7 +54,7 @@ This project has not yet been licensed, and thus, standard copyright laws apply.
             
 ## Contributing
 
-Valerie Russell is the sole contributor to this project.
+Valerie Russell is the sole contributor to this project. Avatar icons are from www.pngrepo.com.
             
 ## Tests
 
